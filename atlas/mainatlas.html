@@ -1,0 +1,262 @@
+<section class="atlas-nav">
+  <div class="atlas-nav-container">
+
+    <div class="atlas-nav-hero">
+      <img
+        src="https://images.squarespace-cdn.com/content/6999e3d79afa8d595619bb2b/1320f5f6-5c8d-450c-93ea-30f013c3a129/AtlasSLogo.png?content-type=image%2Fpng"
+        alt="Atlas Lakehouse"
+      >
+    </div>
+
+    <div class="atlas-about">
+      <p>
+        <strong>Atlas by Lexington</strong> is our modular lakehouse platform built to unify fragmented data into a clear, structured foundation for decision-making.
+        Atlas is divided into industry-specific solutions — <strong>ATLAS.C</strong>, <strong>ATLAS.E</strong>, <strong>ATLAS.X</strong>, and <strong>ATLAS.M</strong> —
+        each designed around the systems, metrics, and realities of its sector. Our aim is to deliver consistent visibility, stronger reporting,
+        and decision-ready intelligence across the business.
+      </p>
+    </div>
+
+    <div class="atlas-nav-grid">
+      <a href="/inside-pages/atlas-c" class="atlas-link">
+        <div class="atlas-item">
+          <div class="atlas-item-top">
+            <div class="atlas-item-tag">Finance</div>
+          </div>
+          <h2>ATLAS.<span class="c">C</span></h2>
+          <p>Supply Chain Finance</p>
+        </div>
+      </a>
+
+      <a href="/inside-pages/atlas-e" class="atlas-link">
+        <div class="atlas-item">
+          <div class="atlas-item-top">
+            <div class="atlas-item-tag">Energy</div>
+          </div>
+          <h2>ATLAS.<span class="e">E</span></h2>
+          <p>Oil &amp; Gas</p>
+        </div>
+      </a>
+
+      <a href="/inside-pages/atlas-x" class="atlas-link">
+        <div class="atlas-item">
+          <div class="atlas-item-top">
+            <div class="atlas-item-tag">Financial Systems</div>
+          </div>
+          <h2>ATLAS.<span class="x">X</span></h2>
+          <p>Banking</p>
+        </div>
+      </a>
+
+      <a href="/inside-pages/atlas-m" class="atlas-link">
+        <div class="atlas-item">
+          <div class="atlas-item-top">
+            <div class="atlas-item-tag">Operations</div>
+          </div>
+          <h2>ATLAS.<span class="m">M</span></h2>
+          <p>Manufacturing</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.atlas-nav,
+.atlas-nav * {
+  font-family: 'Montserrat', sans-serif !important;
+  box-sizing: border-box;
+}
+
+.atlas-nav {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top center, rgba(201,168,106,0.10), transparent 24%),
+    radial-gradient(circle at 82% 20%, rgba(255,255,255,0.04), transparent 18%),
+    linear-gradient(180deg, #020202 0%, #060606 58%, #0a0a0a 100%);
+  padding: 122px 24px 118px;
+  text-align: center;
+}
+
+.atlas-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.atlas-nav-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.atlas-nav-hero {
+  margin-bottom: 38px;
+}
+
+.atlas-nav-hero img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  opacity: 0.92;
+  filter: drop-shadow(0 0 26px rgba(212, 175, 55, 0.16));
+}
+
+.atlas-about {
+  max-width: 980px;
+  margin: 0 auto 60px;
+  padding: 0 18px;
+}
+
+.atlas-about p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.95;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.atlas-about strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.atlas-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.atlas-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.atlas-item {
+  min-height: 228px;
+  padding: 28px 24px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015)),
+    rgba(255,255,255,0.015);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.24),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+  text-align: center;
+}
+
+.atlas-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(212, 175, 55, 0.42);
+  box-shadow:
+    0 24px 46px rgba(0,0,0,0.30),
+    0 10px 24px rgba(212,175,55,0.07);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)),
+    rgba(255,255,255,0.02);
+}
+
+.atlas-item-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.atlas-item-tag {
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.atlas-item h2 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.atlas-item p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.atlas-item .c { color: #d4af37; }
+.atlas-item .e { color: #78d85f; }
+.atlas-item .x { color: #39c6ff; }
+.atlas-item .m { color: #ff5ab7; }
+
+@media (max-width: 1100px) {
+  .atlas-nav-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .atlas-nav {
+    padding: 84px 18px 82px;
+  }
+
+  .atlas-nav-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .atlas-about {
+    margin-bottom: 36px;
+    padding: 0;
+  }
+
+  .atlas-about p {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .atlas-item {
+    min-height: auto;
+    padding: 22px 20px 24px;
+  }
+
+  .atlas-item-top {
+    margin-bottom: 20px;
+  }
+
+  .atlas-item h2 {
+    font-size: 28px;
+    letter-spacing: 0.06em;
+  }
+
+  .atlas-item p {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+}
+</style>
