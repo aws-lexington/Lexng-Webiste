@@ -1,0 +1,164 @@
+<section class="ld-footer">
+
+  <div class="ld-footer-container">
+
+    <!-- LEFT: BRAND -->
+    <div class="ld-footer-brand">
+      <img src="https://cdn.prod.website-files.com/69caae09f0e15194162d488b/69cabae24eed06fad844fd6a_LCG%20Logos_White.png" alt="Lexington Group">
+
+      <p>
+        Enterprise Data Consulting. We transform fragmented systems into clear,
+        decision-ready intelligence across your organization.
+      </p>
+    </div>
+
+    <!-- CENTER: NAV -->
+    <div class="ld-footer-links">
+      <h4>Explore</h4>
+      <a href="/about-us">About Us</a>
+      <a href="/contact-us">Contact Us</a>
+      <a href="/atlas">Atlas Platform</a>
+      <a href="/chalet">The Chalet</a>
+    </div>
+
+    <!-- RIGHT: CONTACT -->
+    <div class="ld-footer-contact">
+      <h4>Contact</h4>
+
+      <p>
+        <a href="tel:18622762100">(862) 276-2100</a>
+      </p>
+
+      <p>
+        <a href="mailto:sales@lexng.com">sales@lexng.com</a>
+      </p>
+
+      <a href="/contact-us" class="ld-footer-btn">
+        Schedule a Consultation
+      </a>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="ld-footer-bottom">
+    © 2026 Lexington Group. All rights reserved.
+  </div>
+
+</section>
+
+<style>
+.ld-footer {
+  background: #000000;
+  padding: 90px 20px 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ld-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 60px;
+}
+
+/* LOGO */
+.ld-footer-brand img {
+  height: 36px;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 0 12px rgba(217,185,110,0.25));
+}
+
+/* TEXT */
+.ld-footer-brand p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.65);
+  max-width: 340px;
+}
+
+/* GOLD HEADINGS */
+.ld-footer-links h4,
+.ld-footer-contact h4 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #c9a86a, #f0d18a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* LINKS */
+.ld-footer-links a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+.ld-footer-links a:hover,
+.ld-footer-contact a:hover {
+  color: #f0d18a;
+}
+
+/* CONTACT */
+.ld-footer-contact p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.ld-footer-contact a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+
+/* BUTTON (FIXED BLACK TEXT) */
+.ld-footer-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 11px 20px;
+
+  background: linear-gradient(135deg, #c9a86a, #f0d18a);
+  color: #000 !important;
+
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+
+  transition: 0.25s;
+}
+
+.ld-footer-btn:hover {
+  background: linear-gradient(135deg, #f0d18a, #c9a86a);
+  color: #000 !important;
+}
+
+/* BOTTOM */
+.ld-footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .ld-footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .ld-footer-brand p {
+    margin: 0 auto;
+  }
+}
+</style>
