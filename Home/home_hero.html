@@ -1,0 +1,368 @@
+<!-- HERO -->
+  <section class="ld-hero">
+    <div class="ld-hero__left">
+      <div class="ld-hero__eyebrow">Enterprise Data Consulting</div>
+
+      <h1>
+        Powering decisions in a changing world.
+      </h1>
+
+      <div class="ld-hero__actions">
+        <a href="#explore-solutions" class="ld-btn ld-btn--primary">Explore Solutions</a>
+        <a href="/contact-us" class="ld-btn ld-btn--secondary">Free Consultation</a>
+      </div>
+    </div>
+
+    <div class="ld-hero__right">
+      <img
+        class="ld-hero__image"
+        src="https://images.squarespace-cdn.com/content/6999e3d79afa8d595619bb2b/6d049c4d-63f8-4b82-a3ff-ec57d3e32a9f/macdash.png?content-type=image%2Fpng"
+        alt="Lexington dashboard preview"
+      >
+    </div>
+  </section>
+
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.ld-page-shell,
+.ld-page-shell * {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.ld-page-shell {
+  width: 100%;
+  background: #f7f7f5;
+  color: #111111;
+  overflow: visible;
+}
+
+/* HEADER */
+.ld-topbar {
+  background: rgba(255,255,255,0.97);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  padding: 40px 42px 28px; /* lower + more breathing room */
+  position: relative;
+  z-index: 1000;
+}
+
+.ld-topbar__inner {
+  max-width: 1540px; /* wider */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 42px;
+}
+
+.ld-topbar__nav,
+.ld-topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.ld-topbar__nav {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.ld-topbar__right {
+  justify-content: flex-end;
+}
+
+.ld-topbar__nav > a,
+.ld-topbar__right a,
+.ld-dropdown__toggle {
+  color: #171717;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  transition: opacity 0.2s ease;
+}
+
+.ld-topbar__nav > a:hover,
+.ld-topbar__right a:hover,
+.ld-dropdown__toggle:hover {
+  opacity: 0.65;
+}
+
+.ld-topbar__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ld-topbar__logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin-top: 2px;
+}
+
+/* DROPDOWNS */
+.ld-dropdown {
+  position: relative;
+}
+
+.ld-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ld-caret {
+  font-size: 10px;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.ld-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 18px);
+  left: 0;
+  min-width: 250px;
+  background: #f3f3f1;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  padding: 18px 22px;
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 2000;
+}
+
+.ld-dropdown__menu--products {
+  min-width: 210px;
+}
+
+.ld-dropdown__menu a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  transition: opacity 0.2s ease;
+}
+
+.ld-dropdown__menu a:hover {
+  opacity: 0.6;
+}
+
+.ld-dropdown:hover .ld-dropdown__menu,
+.ld-dropdown:focus-within .ld-dropdown__menu {
+  display: flex;
+}
+
+/* HERO */
+.ld-hero {
+  max-width: 1320px; /* wider hero area */
+  margin: 0 auto;
+  padding: 120px 32px 96px; /* lower */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  justify-items: center; /* center both columns */
+  gap: 48px;
+}
+
+.ld-hero__left {
+  max-width: 520px;
+  width: 100%;
+}
+
+.ld-hero__eyebrow {
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: #b28a35;
+}
+
+.ld-hero h1 {
+  margin: 0 0 28px 0;
+  font-size: clamp(54px, 6vw, 74px);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+  font-weight: 600;
+  color: #1a1a1a;
+  max-width: 520px;
+}
+
+.ld-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ld-btn {
+  min-height: 44px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.ld-btn--primary {
+  background: #0d0d0f;
+  color: #ffffff;
+  border: 1px solid #0d0d0f;
+}
+
+.ld-btn--primary:hover {
+  background: #1a1a1d;
+  border-color: #1a1a1d;
+}
+
+.ld-btn--secondary {
+  background: transparent;
+  color: #4a4a4f;
+  border: 1px solid rgba(0,0,0,0.16);
+}
+
+.ld-btn--secondary:hover {
+  border-color: rgba(0,0,0,0.28);
+  color: #111111;
+}
+
+.ld-hero__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ld-hero__image {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .ld-topbar {
+    padding: 30px 24px 22px;
+  }
+
+  .ld-topbar__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 1200px;
+  }
+
+  .ld-topbar__nav,
+  .ld-topbar__right,
+  .ld-topbar__brand {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ld-dropdown__menu {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .ld-hero {
+    max-width: 900px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 36px;
+    padding: 88px 24px 72px;
+  }
+
+  .ld-hero__left {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ld-hero h1 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ld-hero__actions {
+    justify-content: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .ld-topbar {
+    padding: 24px 16px 18px;
+  }
+
+  .ld-topbar__nav,
+  .ld-topbar__right {
+    gap: 12px;
+  }
+
+  .ld-topbar__nav > a,
+  .ld-topbar__right a,
+  .ld-dropdown__toggle {
+    font-size: 12px;
+  }
+
+  .ld-topbar__logo {
+    height: 30px;
+  }
+
+  .ld-dropdown__menu {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    min-width: 100%;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .ld-dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .ld-dropdown__toggle {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ld-hero {
+    padding: 64px 16px 48px;
+    gap: 24px;
+  }
+
+  .ld-hero__eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    margin-bottom: 14px;
+  }
+
+  .ld-hero h1 {
+    font-size: clamp(40px, 12vw, 54px);
+    line-height: 0.98;
+  }
+
+  .ld-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ld-btn {
+    width: 100%;
+  }
+}
+</style>
