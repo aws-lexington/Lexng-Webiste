@@ -1,0 +1,311 @@
+<section class="atlas-home-ad">
+  <div class="atlas-home-ad-shell">
+    <div class="atlas-home-ad-grid">
+      
+      <div class="atlas-home-ad-copy">
+        <div class="atlas-home-ad-kicker">ATLAS LAKEHOUSE</div>
+
+        <h2 class="atlas-home-ad-title">
+          One architecture to unify, refine, and deliver intelligence.
+        </h2>
+
+        <p class="atlas-home-ad-text">
+          Atlas Lakehouse brings fragmented business data into one modern environment built for clarity,
+          consistency, and decision-ready insight.
+        </p>
+
+        <div class="atlas-home-ad-actions">
+          <button
+            type="button"
+            class="atlas-home-btn atlas-home-btn-primary"
+            onclick="window.location.href='https://lexng.com/atlas'">
+            Atlas
+          </button>
+
+          <button
+            type="button"
+            class="atlas-home-btn atlas-home-btn-secondary"
+            onclick="window.location.href='https://lexng.com/services/atlas-approach'">
+            Atlas Approach
+          </button>
+        </div>
+      </div>
+
+      <div class="atlas-home-ad-visual">
+        <div class="atlas-home-ad-frame">
+          <img
+            src="https://images.squarespace-cdn.com/content/6999e3d79afa8d595619bb2b/1320f5f6-5c8d-450c-93ea-30f013c3a129/AtlasSLogo.png?content-type=image%2Fpng"
+            alt="Atlas Lakehouse"
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.atlas-home-ad,
+.atlas-home-ad * {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.atlas-home-ad {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(200, 169, 106, 0.12), transparent 32%),
+    radial-gradient(circle at 82% 22%, rgba(255, 255, 255, 0.04), transparent 22%),
+    linear-gradient(180deg, #030303 0%, #070707 56%, #0a0a0a 100%);
+  padding: 96px 0 76px;
+  color: #f5f1e8;
+  isolation: isolate;
+}
+
+.atlas-home-ad::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 44px 44px;
+  opacity: 0.08;
+  z-index: -2;
+}
+
+.atlas-home-ad::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.16) 100%);
+  z-index: -1;
+}
+
+.atlas-home-ad-shell {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 36px;
+  position: relative;
+  z-index: 2;
+}
+
+.atlas-home-ad-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 56px;
+  align-items: center;
+  padding: 44px 44px 42px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.018)),
+    rgba(255,255,255,0.015);
+  box-shadow:
+    0 28px 60px rgba(0,0,0,0.34),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+}
+
+.atlas-home-ad-copy {
+  position: relative;
+  z-index: 10;
+  max-width: 620px;
+}
+
+.atlas-home-ad-kicker {
+  margin: 0 0 14px;
+  color: #c8a96a;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.atlas-home-ad-title {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: clamp(34px, 4.5vw, 54px);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  max-width: 760px;
+}
+
+.atlas-home-ad-text {
+  margin: 0;
+  color: rgba(255,255,255,0.72);
+  font-size: 15px;
+  line-height: 1.9;
+  font-weight: 500;
+  max-width: 560px;
+}
+
+.atlas-home-ad-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  position: relative;
+  z-index: 20;
+  flex-wrap: wrap;
+}
+
+.atlas-home-btn {
+  min-height: 52px;
+  padding: 0 22px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0;
+  position: relative;
+  z-index: 999;
+  pointer-events: auto !important;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    transform 0.22s ease,
+    background 0.22s ease,
+    border-color 0.22s ease,
+    color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.atlas-home-btn:hover {
+  transform: translateY(-1px);
+}
+
+.atlas-home-btn-primary {
+  background: linear-gradient(180deg, #d7b76a 0%, #c8a96a 100%);
+  color: #050505;
+  border: 1px solid #c8a96a;
+  box-shadow: 0 12px 24px rgba(200,169,106,0.18);
+}
+
+.atlas-home-btn-primary:hover {
+  background: linear-gradient(180deg, #dfbf74 0%, #cfb16f 100%);
+  border-color: #cfb16f;
+}
+
+.atlas-home-btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.16);
+  color: #f5f1e8;
+}
+
+.atlas-home-btn-secondary:hover {
+  border-color: rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.03);
+}
+
+.atlas-home-ad-visual,
+.atlas-home-ad-frame,
+.atlas-home-ad-frame img {
+  pointer-events: none;
+}
+
+.atlas-home-ad-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atlas-home-ad-frame {
+  width: 100%;
+  max-width: 380px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background:
+    radial-gradient(circle at center, rgba(255,255,255,0.035), rgba(255,255,255,0.01) 62%),
+    rgba(255,255,255,0.015);
+  box-shadow:
+    0 22px 48px rgba(0,0,0,0.28),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.atlas-home-ad-frame img {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
+  display: block;
+  opacity: 0.88;
+  filter: drop-shadow(0 8px 20px rgba(200,169,106,0.14));
+}
+
+@media (max-width: 900px) {
+  .atlas-home-ad {
+    padding: 72px 0 58px;
+  }
+
+  .atlas-home-ad-shell {
+    padding: 0 22px;
+  }
+
+  .atlas-home-ad-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 28px 24px 26px;
+  }
+
+  .atlas-home-ad-copy {
+    max-width: 100%;
+  }
+
+  .atlas-home-ad-title {
+    max-width: 100%;
+  }
+
+  .atlas-home-ad-frame {
+    max-width: 300px;
+    padding: 18px;
+  }
+
+  .atlas-home-ad-frame img {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 640px) {
+  .atlas-home-ad {
+    padding: 56px 0 42px;
+  }
+
+  .atlas-home-ad-shell {
+    padding: 0 16px;
+  }
+
+  .atlas-home-ad-grid {
+    gap: 22px;
+    padding: 22px 18px 20px;
+  }
+
+  .atlas-home-ad-title {
+    font-size: 30px;
+  }
+
+  .atlas-home-ad-text {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+
+  .atlas-home-ad-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .atlas-home-btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .atlas-home-ad-frame img {
+    max-width: 150px;
+  }
+}
+</style>
